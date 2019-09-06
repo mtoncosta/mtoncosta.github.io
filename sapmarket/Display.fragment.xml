@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormDisplay480_Trial"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			title="{Name}"
+			labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="3"
+			columnsL="2"
+			columnsM="2"
+			singleContainerFullSize="false" >
+			<f:content>
+				<core:Title text="{i18n>labelProductGeneralinformation}" />
+				<Label text="{i18n>labelProductID}" />
+				<Text text="{ID}" />
+				<Label text="{i18n>labelProductDescription}" />
+				<Text text="{Description}" />
+				<Label text="{i18n>labelProductPrice}" />
+				<Text text="{Price}" />
+				<Label text="{i18n>labelProductRating}" />
+				<RatingIndicator id="RI_XS_Display" maxValue="5" class="sapUiSmallMarginBottom" value="{Rating}" iconSize="12px" enabled="false" />
+				<core:Title text="{i18n>labelProductCategory}" />
+				<Text text="{Category/Name}" />
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+</core:FragmentDefinition>

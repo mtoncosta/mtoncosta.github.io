@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Dialog
+	    title="{i18n>labelSignIn}"
+		confirm="handleConfirm"
+		modal="true">
+		<content>
+			<Input id = "uid" placeholder = "{i18n>labelUserID}" />
+			<Input id = "pwd" placeholder = "{i18n>labelPwd}" type = "Password" />
+		</content>
+		<beginButton>
+		    <Button text="{i18n>labelOk}" press="handleCloseDialog" />
+		</beginButton>
+		<endButton>
+		 	<Button text="{i18n>labelCancel}" press="handleCloseDialog" />
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>
