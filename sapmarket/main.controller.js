@@ -261,9 +261,9 @@ sap.ui.controller("sapmarket.main", {
 
 		return requestObj = {
 				requestUri: "",
-				requestUrl: "https://services.odata.org/V3/(S(yccru4z1qsrrhsf2igzp20y3))/OData/OData.svc/",
-				requestUrlProduct: "https://services.odata.org/V3/(S(yccru4z1qsrrhsf2igzp20y3))/OData/OData.svc/Products",
-				requestUrlCategory: "https://services.odata.org/V3/(S(yccru4z1qsrrhsf2igzp20y3))/OData/OData.svc/Categories",
+				requestUrl: "https://cors-anywhere.herokuapp.com/https://services.odata.org/V3/(S(yccru4z1qsrrhsf2igzp20y3))/OData/OData.svc/",
+				requestUrlProduct: "https://cors-anywhere.herokuapp.com/https://services.odata.org/V3/(S(yccru4z1qsrrhsf2igzp20y3))/OData/OData.svc/Products",
+				requestUrlCategory: "https://cors-anywhere.herokuapp.com/https://services.odata.org/V3/(S(yccru4z1qsrrhsf2igzp20y3))/OData/OData.svc/Categories",
 				method: "",
 				data: {},
 				headersAccess: {
